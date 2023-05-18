@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "TT Directum";
+}
+
+<form method="POST" action="/api/saveuser" class="form-signin">
+    <label for="inputLastName" class="sr-only">*Фамилия</label>
+    <input type="text" id="inputLastName" class="form-control" required placeholder="Фамилия" name="lastName" autofocus="">
+
+    <label for="inputFirstName" class="sr-only">*Имя</label>
+    <input type="text" id="inputFirstName" class="form-control" required placeholder="Имя" name="firstName">
+
+    <label for="inputMiddleName" class="sr-only">Отчество</label>
+    <input type="text" id="inputMiddleName" class="form-control" placeholder="Отчество" name="middleName">
+
+    <label for="inputBirthDate" class="sr-only">*День рождения</label>
+    <input type="date" id="inputBirthDate" class="form-control" required placeholder="День рождения" name="birthDate">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Отправить</button>
+</form>
